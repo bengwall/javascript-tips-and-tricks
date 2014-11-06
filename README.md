@@ -23,6 +23,36 @@ var
 Always declar variables with `var`.  When you fail to specify var, the variable gets placed in the global context, potentially clobbering existing values.
 
 
+Nested Functions
+----------------
+
+Nested functions can be very useful to contain the scope of functions.  Use them often as possible.  They are very good for scoping helper functions, for instance.
+
+```
+var functionA = function() {
+	var functionNested = function() {
+    	...
+    }
+    functionNested();
+}
+```
+
+Constants
+---------
+
+Use NAMES_LIKE_THIS for constant values.
+
+
+Variable Naming
+---------------
+
+It is a good practice to name your variable as the last property of the object being assigned.
+
+```
+var hairColor = person.hairColor;
+```
+
+
 True and False Boolean Expressions
 ----------------------------------
 
@@ -166,7 +196,6 @@ Arrays
 
 * `push` appends a new item on the back of array
 * `unshift` prepends a new item on the front of the arry
-
 
 
 Other Useful JavaScript Guides 
