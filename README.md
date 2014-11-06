@@ -17,6 +17,12 @@ null === undefined 	// false
 '0' === false 		// false
 ```
 
+var
+---
+
+Always declar variables with `var`.  When you fail to specify var, the variable gets placed in the global context, potentially clobbering existing values.
+
+
 True and False Boolean Expressions
 ----------------------------------
 
